@@ -57,7 +57,7 @@ Single example for container based components to showcase how it is constructed 
 * Use default properties or placeholder content without additional styling
 
 
-#####Visuals
+##### Visuals
 Use schematic drawing to visualise content areas, when containers do not have a default content type and accept any kind of content (node). If there are multiple content areas use text to communicate how each area is called.
 
 <table class="noborder">
@@ -129,7 +129,7 @@ Use other components from the library to explain mechanism containers behaviour,
 
 
 
-#####Description
+##### Description
 Structure example description should state:
 
 * what areas component consist of (if there are multiple areas only)
@@ -187,7 +187,7 @@ Each component has a set of properties and features to explain. Examples of them
 * Content
 * Behaviour
 
-#####Visuals
+##### Visuals
 Be aware that users are visual learners by nature. Examples we provide should be as self explanatory as possible. 
 
 In order to decide what content inside of a snippets would be suitable think about the following:
