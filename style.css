@@ -1,0 +1,31 @@
+table {
+  width: 100%;
+}
+
+table td{
+  vertical-align: top;
+}
+
+table.noborder td{
+  border: 4px solid white;
+}
+
+table.noborder tr{
+  border: 1px solid white;
+}
+
+.do {
+  color: #60BC57;
+  background-color: #EDF9E5;
+  font-weight: bold;
+}
+
+.dont {
+  color: #EE5951;
+  background-color: #FFEBEB;
+  font-weight: bold;
+}
+
+.preview {
+  background-color: #F0F4F7;
+}
