@@ -36,7 +36,9 @@ Example:
 > * To display a full page loading state
 
 <br>
+
 ## Import Section
+
 This section should provide a line of code which can be copied and pasted to the developer's project, so component can be used right away.
 
 Example:
