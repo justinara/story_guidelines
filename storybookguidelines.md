@@ -850,6 +850,7 @@ Common use cases is a list of examples which showcase recommended layouts and of
 
 
 <br>
+
 ## API Section
 
 API table should list ALL available properties and methods of a presented component. 
