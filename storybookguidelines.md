@@ -66,12 +66,12 @@ Single example for container based components to showcase how it is constructed 
 
 <br>
 
-##### Visuals
+#### Visuals
 
 Use schematic drawing to visualise content areas, when containers do not have a default content type and accept any kind of content (node). If there are multiple content areas use text to communicate how each area is called.
 
 <table>
-	<tr>
+<tr>
     <td><img src='FooterDO.png'/></td>
     <td><img src='FooterDONT.png'/></td>
   </tr>
@@ -93,7 +93,7 @@ Use schematic drawing to visualise content areas, when containers do not have a 
 Showcase the effect of different values passed to the same prop if it helps to communicate the possibilities component provides. Use text to communicate what values have been passed and the effect it made.
 
 <table>
-	<tr>
+<tr>
     <td><img src='LayoutDO.png'/></td>
     <td><img src='LayoutDONT.png'/></td>
   </tr>
@@ -138,7 +138,7 @@ If i.e. ‘title’ also accepts node content, it should be mentioned in a descr
 Use other components from the library to explain mechanism containers behaviour, such as modal call out, native file upload, etc.
 
 <table>
-	<tr>
+<tr>
     <td><img src='ModalStructureDO.png'/></td>
     <td><img src='ModalStructureDONT.png'/></td>
   </tr>
@@ -159,7 +159,7 @@ Use other components from the library to explain mechanism containers behaviour,
 
 <br>
 
-##### Description
+#### Description
 
 Structure example description should state:
 
@@ -170,14 +170,14 @@ Structure example description should state:
 
 <table>
 	<tr>
-		<td><img src='DO.png'/><br></td>
+	<td><img src='DO.png'/><br></td>
     	<td>
       		<strong>Structure</strong><br>
-      		Component consists of a title area and actions container (optional). Actions bar can contain any 			number of CTA items
+      		Component consists of a title area and actions container (optional). Actions bar can contain any number of CTA items
     	</td>
   </tr>
   <tr>
-		<td><img src='DONT.png'/><br></td>
+	<td><img src='DONT.png'/><br></td>
     	<td>
       		<strong>Structure</strong><br>
       		Basic structure of a component
@@ -187,19 +187,18 @@ Structure example description should state:
 
 <table>
 	<tr>
-		<td><img src='DO.png'/><br></td>
+	<td><img src='DO.png'/><br></td>
     	<td>
       		<strong>Structure</strong><br>
       		Render modal content by using children prop. Control modal appearance with props:
       		<ul>
       			<li>isOpen - this bool prop shows and hides the modal.</li>
-				<li>onRequestClose - this prop calls a function you request. It can be used to control isOpen 					prop.
-				</li>
+			<li>onRequestClose - this prop calls a function you request. It can be used to control isOpen prop.</li>
       		</ul>
     	</td>
   </tr>
   <tr>
-		<td><img src='DONT.png'/><br></td>
+	<td><img src='DONT.png'/><br></td>
     	<td>
       		<strong>Structure</strong><br>
       		A simple example for modal with an alert
@@ -223,7 +222,7 @@ Each component has a set of properties and features to explain. Examples of them
 
 <br>
 
-##### Visuals
+#### Visuals
 
 Be aware that users are visual learners by nature. Examples we provide should be as self explanatory as possible. 
 
@@ -238,7 +237,7 @@ In order to decide what content inside of a snippets would be suitable think abo
 In cases where example lists down available value options use predefined component elements (if there are any) to communicate how passed value affects component appearance or behaviour.
 
 <table>
-	<tr>
+<tr>
     <td><img src='InputDO.png'/></td>
     <td><img src='InputDONT.png'/></td>
   </tr>
@@ -261,7 +260,7 @@ In cases where example lists down available value options use predefined compone
 Merge statuses into a single snippet for interactive components. Use labels to communicate how each status is called.
 
 <table>
-	<tr>
+<tr>
     <td><img src='StatesDO.png'/></td>
     <td><img src='StatesDONT.png'/></td>
   </tr>
@@ -283,7 +282,7 @@ Merge statuses into a single snippet for interactive components. Use labels to c
 Display single feature at the time. If example purpose is to list down the options, don’t complicate it with content which is not relevant at that specific moment.
 
 <table>
-	<tr>
+<tr>
     <td><img src='ListItemSelectDO.png'/></td>
     <td><img src='ListItemSelectDONT.png'/></td>
   </tr>
@@ -305,7 +304,7 @@ Display single feature at the time. If example purpose is to list down the optio
 In cases where property value affects the content which is allowed to be displayed inside of a component use real case examples. This approach provides the user with context what each value is designed for, and also sets right content patterns.
 
 <table>
-	<tr>
+<tr>
     <td><img src='NotificationsDO.png'/></td>
     <td><img src='NotificationsDONT.png'/></td>
   </tr>
@@ -328,7 +327,7 @@ In cases where property value affects the content which is allowed to be display
 Use real content to demonstrate edge cases handling. It showcases the behaviour and sets correct content patterns at the same time. Avoid gibberish text that doesn't bring benefit.
 
 <table>
-	<tr>
+<tr>
     <td><img src='TextOverflowDO.png'/></td>
     <td><img src='TextOverflowDONT.png'/></td>
   </tr>
@@ -351,7 +350,7 @@ Use real content to demonstrate edge cases handling. It showcases the behaviour 
 Merge directly dependent or same purpose properties into a single example (i.e. width and height could be a single example named ‘Dimensions’).
 
 <table>
-	<tr>
+<tr>
     <td><img src='FixedAreasDO.png'/></td>
     <td><img src='FixedAreasDONT.png'/></td>
   </tr>
@@ -376,7 +375,7 @@ Don't merge property values which serve different purposes. Provide each of them
 > In example, selection items inside of a dropdown layout can be grouped using subheader or divider, but intentions are different. Subheader provides a name for a group. While divider separates list item that provide entirely different results, i.e. will add another field to the form where you can specify a custom length of a plan.
 
 <table>
-	<tr>
+<tr>
     <td><img src='DropdownLayoutDO.png'/></td>
     <td><img src='DropdownLayoutDONT.png'/></td>
   </tr>
@@ -409,14 +408,14 @@ List of properties that controls visual look and feel of a component
 		<th colspan=7>What to show in a single snippet?</th>
 	</tr>
 	<tr>
-    	<td><strong>Size and Layout</strong><br></td>
-    	<td>size</td>
-    	<td>width<br>height</td>
-    	<td>alignment</td>
-    	<td>position</td>
-    	<td>direction</td>
-    	<td>padding<br>margin</td>
-    	<td>maxWidth<br>maxHeight<br>ellipsis<br>textWrap<br>overflow</td>
+		<td><strong>Size and Layout</strong><br></td>
+		<td>size</td>
+		<td>width<br>height</td>
+		<td>alignment</td>
+		<td>position</td>
+		<td>direction</td>
+		<td>padding<br>margin</td>
+		<td>maxWidth<br>maxHeight<br>ellipsis<br>textWrap<br>overflow</td>
 	</tr>
 	<tr>
 	    <td><strong>Style</strong><br></td>
@@ -441,14 +440,14 @@ List of predefined states of a component and when they should be displayed
 		<th colspan=7>What to show in a single snippet?</th>
 	</tr>
 	<tr>
-    	<td><strong>Status</strong><br></td>
-    	<td>selected<br>disabled<br> selected disabled</td>
-    	<td>unchecked<br>checked<br>error<br>disabled<br>checked disabled</td>
-    	<td>defaultSelected</td>
-    	<td>eror<br>warning<br>loading</td>
-	   <td>status</td>
-	   <td>statusMessage</td>
-	   <td>readOnly<br>disabled</td>
+		<td><strong>Status</strong><br></td>
+		<td>selected<br>disabled<br> selected disabled</td>
+		<td>unchecked<br>checked<br>error<br>disabled<br>checked disabled</td>
+		<td>defaultSelected</td>
+		<td>eror<br>warning<br>loading</td>
+		<td>status</td>
+		<td>statusMessage</td>
+		<td>readOnly<br>disabled</td>
 	</tr>
 </table>
 
@@ -461,32 +460,32 @@ List of properties that allow to customise content
 		<th colspan=7>What to show in a single snippet?</th>
 	</tr>
 	<tr>
-    	<td><strong>Content Areas</strong><br></td>
-    	<td>header<br>footer<br>footnote</td>
-    	<td>toolbar<br>subtoolbar</td>
-    	<td>suffix<br>prefix</td>
-    	<td>tooltip</td>
+		<td><strong>Content Areas</strong><br></td>
+		<td>header<br>footer<br>footnote</td>
+		<td>toolbar<br>subtoolbar</td>
+		<td>suffix<br>prefix</td>
+		<td>tooltip</td>
 	</tr>
 	<tr>
-    	<td><strong>Text</strong><br></td>
-    	<td>overline<br>title<br>subtitle<br>description</td>
-    	<td>additionalInfo</td>
-    	<td></td>
-    	<td></td>
+		<td><strong>Text</strong><br></td>
+		<td>overline<br>title<br>subtitle<br>description</td>
+		<td>additionalInfo</td>
+		<td></td>
+		<td></td>
 	</tr>
 	<tr>
-    	<td><strong>Visual content</strong><br></td>
-    	<td>illustration<br>thumbnail<br>image</td>
-    	<td>avatar</td>
-    	<td>badge</td>
-    	<td></td>
+		<td><strong>Visual content</strong><br></td>
+		<td>illustration<br>thumbnail<br>image</td>
+		<td>avatar</td>
+		<td>badge</td>
+		<td></td>
 	</tr>
 	<tr>
-    	<td><strong>Actions</strong><br></td>
-    	<td>action<br>actionText</td>
-    	<td>primaryAction<br>secondaryAction</td>
-    	<td></td>
-    	<td></td>
+		<td><strong>Actions</strong><br></td>
+		<td>action<br>actionText</td>
+		<td>primaryAction<br>secondaryAction</td>
+		<td></td>
+		<td></td>
 	</tr>
 </table>
 
@@ -498,25 +497,25 @@ List of properties that control component behaviour or enable specific functiona
 		<th colspan=7>What to show in a single snippet?</th>
 	</tr>
 	<tr>
-    	<td><strong>Data loading</strong><br></td>
-    	<td>lazyLoading</td>
-    	<td>infiniteScroll<br>pagination</td>
-    	<td></td>
-    	<td></td>
+		<td><strong>Data loading</strong><br></td>
+		<td>lazyLoading</td>
+		<td>infiniteScroll<br>pagination</td>
+		<td></td>
+		<td></td>
 	</tr>
 	<tr>
-    	<td><strong>Display</strong><br></td>
-    	<td>lazyLoading</td>
-    	<td>horizontalScroll</td>
-    	<td>overflow</td>
-    	<td>resizable</td>
+		<td><strong>Display</strong><br></td>
+		<td>lazyLoading</td>
+		<td>horizontalScroll</td>
+		<td>overflow</td>
+		<td>resizable</td>
 	</tr>
 	<tr>
-    	<td><strong>Other</strong><br></td>
-    	<td>spellChecking</td>
-    	<td>reordable</td>
-    	<td>custom HTML tag</td>
-    	<td></td>
+		<td><strong>Other</strong><br></td>
+		<td>spellChecking</td>
+		<td>reordable</td>
+		<td>custom HTML tag</td>
+		<td></td>
 	</tr>
 </table>
 
@@ -524,7 +523,7 @@ List of properties that control component behaviour or enable specific functiona
 Use content to communicate hard to notice functionality for the end user:
 
 <table>
-	<tr>
+<tr>
     <td><img src='LetterCountingDO.png'/></td>
     <td><img src='LetterCountingDONT.png'/></td>
   </tr>
@@ -545,7 +544,7 @@ Use content to communicate hard to notice functionality for the end user:
 Guide users with content if they are required to make an action to see a feature or functionality:
 
 <table>
-	<tr>
+<tr>
     <td><img src='ErrorMessageDO.png'/></td>
     <td><img src='ErrorMessageDONT.png'/></td>
   </tr>
@@ -566,7 +565,7 @@ Guide users with content if they are required to make an action to see a feature
 Add external labels to communicate changes that happen in code for non visual features:
 
 <table>
-	<tr>
+<tr>
     <td><img src='ToggleButtonDO.png'/></td>
     <td><img src='ToggleButtonDONT.png'/></td>
   </tr>
@@ -585,7 +584,7 @@ Add external labels to communicate changes that happen in code for non visual fe
 
 <br>
 
-##### Description
+#### Description
 
 Property example should always be followed by a description explaining how and when to use it. Depending on a property type description could state:
 
@@ -600,7 +599,7 @@ Selection of examples how to write example descriptions:
 
 <table>
 	<tr>
-		<td><img src='DO.png'/><br></td>
+	<td><img src='DO.png'/><br></td>
     	<td>
       		<strong>Skin</strong><br>
       		Highlights the purpose of an action. It supports 3 skin types.
@@ -622,7 +621,7 @@ Selection of examples how to write example descriptions:
 
 <table>
 	<tr>
-		<td><img src='DO.png'/><br></td>
+	<td><img src='DO.png'/><br></td>
     	<td>
       		<strong>Shape</strong><br>
       		Defines intent of an input. It supports 2 shape types:
@@ -633,7 +632,7 @@ Selection of examples how to write example descriptions:
     	</td>
   </tr>
   <tr>
-		<td><img src='DONT.png'/><br></td>
+	<td><img src='DONT.png'/><br></td>
     	<td>
       		<strong>Shape</strong><br>
       		AddressInput can be either round or square depending on the roundInput prop (default: true).
@@ -643,7 +642,7 @@ Selection of examples how to write example descriptions:
 
 <table>
 	<tr>
-		<td><img src='DO.png'/><br></td>
+	<td><img src='DO.png'/><br></td>
     	<td>
       		<strong>Size</strong><br>
       		Adjust the component size using size prop. It supports 3 sizes:
@@ -655,7 +654,7 @@ Selection of examples how to write example descriptions:
     	</td>
   </tr>
   <tr>
-		<td><img src='DONT.png'/><br></td>
+	<td><img src='DONT.png'/><br></td>
     	<td>
       		<strong>Size</strong><br>
       		Supports three sizes: large, medium and small.
@@ -665,7 +664,7 @@ Selection of examples how to write example descriptions:
 
 <table>
 	<tr>
-		<td><img src='DO.png'/><br></td>
+	<td><img src='DO.png'/><br></td>
     	<td>
       		<strong>States</strong><br>
       		Defines checkbox selection state. Component supports 5 states:
@@ -679,7 +678,7 @@ Selection of examples how to write example descriptions:
     	</td>
   </tr>
   <tr>
-		<td><img src='DONT.png'/><br></td>
+	<td><img src='DONT.png'/><br></td>
     	<td>
       		<strong>States</strong><br>
       		Checkbox can be either checked, unchecked, has error or disabled.
@@ -689,7 +688,7 @@ Selection of examples how to write example descriptions:
 
 <table>
 	<tr>
-		<td><img src='DO.png'/><br></td>
+	<td><img src='DO.png'/><br></td>
     	<td>
       		<strong>Status</strong><br>
       		Control component status using status prop. It supports 3 states:
@@ -701,7 +700,7 @@ Selection of examples how to write example descriptions:
     	</td>
   </tr>
   <tr>
-		<td><img src='DONT.png'/><br></td>
+	<td><img src='DONT.png'/><br></td>
     	<td>
       		<strong>Status</strong><br>
       		Supports error, warning and loading status.
@@ -711,14 +710,14 @@ Selection of examples how to write example descriptions:
 
 <table>
 	<tr>
-		<td><img src='DO.png'/><br></td>
+	<td><img src='DO.png'/><br></td>
     	<td>
       		<strong>Prefix Icon</strong><br>
       		Allows to provide additional clarity to an action with a visual clue.
     	</td>
   </tr>
   <tr>
-		<td><img src='DONT.png'/><br></td>
+	<td><img src='DONT.png'/><br></td>
     	<td>
       		<strong>Prefix Icon</strong><br>
       		Supports prefix icons.
@@ -728,14 +727,14 @@ Selection of examples how to write example descriptions:
 
 <table>
 	<tr>
-		<td><img src='DO.png'/><br></td>
+	<td><img src='DO.png'/><br></td>
     	<td>
       		<strong>Subtitle</strong><br>
       		Explain action in more detail with a subtitle. Keep in mind that long subtitles affect visual hierarchy and compete with main CTA.
     	</td>
   </tr>
   <tr>
-		<td><img src='DONT.png'/><br></td>
+	<td><img src='DONT.png'/><br></td>
     	<td>
       		<strong>Subtitle</strong><br>
       		A subtitle text can be set.
@@ -748,70 +747,70 @@ Selection of examples how to write example descriptions:
 		<td><img src='DO.png'/><br></td>
     	<td>
       		<strong>Subtoolbar</strong><br>
-      			Provides a sticky container for related actions or content (i.e. list of applied filters). Area 				accepts any kind of content.
+      		Provides a sticky container for related actions or content (i.e. list of applied filters). Area accepts any kind of content.
     	</td>
   </tr>
   <tr>
-		<td><img src='DONT.png'/><br></td>
+	<td><img src='DONT.png'/><br></td>
     	<td>
       		<strong>Subtoolbar</strong><br>
-				A Table can contain a sticky sub-toolbar, an area for additional actions such as displaying a tag 				list of filtered items.
+		A Table can contain a sticky sub-toolbar, an area for additional actions such as displaying a tag list of filtered items.
     	</td>
   </tr>
 </table>
 
 <table>
 	<tr>
-		<td><img src='DO.png'/><br></td>
+	<td><img src='DO.png'/><br></td>
     	<td>
       		<strong>Header and Footer</strong><br>
-      			Enable fixed header and footer areas to store actions related to the options list, i.e. “Manage options”, “Add new option”.
+      		Enable fixed header and footer areas to store actions related to the options list, i.e. “Manage options”, “Add new option”.
     	</td>
   </tr>
   <tr>
-		<td><img src='DONT.png'/><br></td>
+	<td><img src='DONT.png'/><br></td>
     	<td>
       		<strong>Header and Footer</strong><br>
-				DropdownLayout supports adding content to fixed header and footer. Use it to add actions like “see all options"
+		DropdownLayout supports adding content to fixed header and footer. Use it to add actions like “see all options"
     	</td>
   </tr>
 </table>
 
 <table>
 	<tr>
-		<td><img src='DO.png'/><br></td>
+	<td><img src='DO.png'/><br></td>
     	<td>
       		<strong>Lazy Load</strong><br>
-      			Defines what to load in initial state:
-      			<ul>
-      				<li>auto - loads full file</li>
-      				<li>metadata - loads only metadata of a file (default)</li>
-      				<li>none - loads nothing in initial state (audio will be loaded once play is pressed)</li>
-      			</ul>
+      		Defines what to load in initial state:
+      		<ul>
+      			<li>auto - loads full file</li>
+      			<li>metadata - loads only metadata of a file (default)</li>
+      			<li>none - loads nothing in initial state (audio will be loaded once play is pressed)</li>
+      		</ul>
     	</td>
   </tr>
   <tr>
-		<td><img src='DONT.png'/><br></td>
+	<td><img src='DONT.png'/><br></td>
     	<td>
       		<strong>Lazy Load</strong><br>
-				The given file is not loaded until play is pressed.
+		The given file is not loaded until play is pressed.
     	</td>
   </tr>
 </table>
 
 <table>
 	<tr>
-		<td><img src='DO.png'/><br></td>
+	<td><img src='DO.png'/><br></td>
     	<td>
       		<strong>Letter Counting</strong><br>
-      			Indicates the number of letters typed inside of an input area. Set both maxLength and hasCounter props to show the counter.
+      		Indicates the number of letters typed inside of an input area. Set both maxLength and hasCounter props to show the counter.
     	</td>
   </tr>
   <tr>
-		<td><img src='DONT.png'/><br></td>
+	<td><img src='DONT.png'/><br></td>
     	<td>
       		<strong>Letter Counting</strong><br>
-				InputArea can indicate how many letters were typed, in order to show the counter you should set both maxLength and hasCounter.
+		InputArea can indicate how many letters were typed, in order to show the counter you should set both maxLength and hasCounter.
     	</td>
   </tr>
 </table>
@@ -830,7 +829,7 @@ Common use cases is a list of examples which showcase recommended layouts and of
 * Showcase complex structures that can be achieved with a component
 
 <table>
-	<tr>
+<tr>
     <td><img src='CommonUseDO.png'/></td>
     <td><img src='CommonUseDONT.png'/></td>
   </tr>
@@ -863,20 +862,20 @@ Each property listed in this sections should have:
 
 <br>
 
-##### Description
+#### Description
 
 > Tip: always start writing description with a verb
 
 <table>
 	<tr>
-		<td><img src='DO.png'/><br></td>
+	<td><img src='DO.png'/><br></td>
     	<td>
       		<strong>fixed</strong><br>
       		Makes tooltip's position fixed to its original placement even if it's outside the boundary.
     	</td>
   </tr>
   <tr>
-		<td><img src='DONT.png'/><br></td>
+	<td><img src='DONT.png'/><br></td>
     	<td>
       		<strong> fixed </strong><br>
       		whether to enable the fixed behaviour.
@@ -886,68 +885,68 @@ Each property listed in this sections should have:
 
 <table>
 	<tr>
-		<td><img src='DO.png'/><br></td>
+	<td><img src='DO.png'/><br></td>
     	<td>
       		<strong> maxWidth </strong><br>
       		Defines maximum width of tooltip content container in pixels.
     	</td>
   </tr>
   <tr>
-		<td><img src='DONT.png'/><br></td>
+	<td><img src='DONT.png'/><br></td>
     	<td>
       		<strong> maxWidth </strong><br>
-      			tooltip content container width in pixels
+      		tooltip content container width in pixels
     	</td>
   </tr>
 </table>
 
 <table>
 	<tr>
-		<td><img src='DO.png'/><br></td>
+	<td><img src='DO.png'/><br></td>
     	<td>
       		<strong> secondary </strong><br>
-				Sets text style to secondary. It affects font color only.
+		Sets text style to secondary. It affects font color only.
     	</td>
   </tr>
   <tr>
-		<td><img src='DONT.png'/><br></td>
+	<td><img src='DONT.png'/><br></td>
     	<td>
       		<strong> secondary </strong><br>
-      			is the text type is secondary. Affects the font color
+      		is the text type is secondary. Affects the font color
     	</td>
   </tr>
 </table>
 
 <table>
 	<tr>
-		<td><img src='DO.png'/><br></td>
+	<td><img src='DO.png'/><br></td>
     	<td>
       		<strong> tooltipProps </strong><br>
-				Allows to pass all available tooltip properties. Check <Tooltip/> API for the full list.
+		Allows to pass all available tooltip properties. Check <Tooltip/> API for the full list.
     	</td>
   </tr>
   <tr>
-		<td><img src='DONT.png'/><br></td>
+	<td><img src='DONT.png'/><br></td>
     	<td>
       		<strong> tooltipProps </strong><br>
-      			Properties for tooltip
+      		Properties for tooltip
     	</td>
   </tr>
 </table>
 
 <table>
 	<tr>
-		<td><img src='DO.png'/><br></td>
+	<td><img src='DO.png'/><br></td>
     	<td>
       		<strong> children </strong><br>
-				Accepts any component as a child item. Common cases for this component are headings, text strings, badges or icons.
+		Accepts any component as a child item. Common cases for this component are headings, text strings, badges or icons.
     	</td>
   </tr>
   <tr>
-		<td><img src='DONT.png'/><br></td>
+	<td><img src='DONT.png'/><br></td>
     	<td>
       		<strong> children </strong><br>
-      			any nodes to be rendered
+      		any nodes to be rendered
     	</td>
   </tr>
 </table>
