@@ -850,6 +850,254 @@ Common use cases is a list of examples which showcase recommended layouts and of
 
 <br>
 
+## Code Snippets
+
+Snippets represent component expressions in code and should be easy to follow so that users can relate the visuals and the code. Component examples should have minimal properties to help users quickly understand their usage.
+
+### Principles
+
+| Clear                                                                                | Consistent                                                    | Meaningful                                                                |
+| ------------------------------------------------------------------------------------ | ------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| Design snippet examples in such a way that the user can immediately understand them. | Make snippet examples meaningful to communicate your message. | Utilize the patterns outlined below to write snippets that are intuitive. |
+
+### Terminology
+
+**Direct snippet** - an example that is directly inserted into the playground.
+
+```jsx
+<TextButton weight="thin">Thin</TextButton>
+```
+
+**Functional snippet** - an example containing components within a function.
+
+```jsx
+() => {
+  return <TextButton weight="thin">Thin</TextButton>;
+};
+```
+
+### General Guidelines
+
+- Only two kind of snippet styling is allowed: direct or functional.
+- The content for the snippets should be prepared together with UX writers and UX designers.
+- Do not use native HTML tags except when necessary.
+- Code duplication is preferable for readability.
+- Do not waste time on caching optimizations, as these examples are not effective code, but rather representation of usage. (useMemo, useCallback)
+
+### Structure Example
+
+Structure snippets are mostly used to represent components that are container based.
+
+```jsx
+<PageFooter>
+  <PageFooter.Start>
+    // Represents empty slot for other components
+    <StorybookComponents.Placeholder>start</StorybookComponents.Placeholder>
+  </PageFooter.Start>
+  <PageFooter.Center>
+    // Represents empty slot for other components
+    <StorybookComponents.Placeholder>center</StorybookComponents.Placeholder>
+  </PageFooter.Center>
+  <PageFooter.End>
+    // Represents empty slot for other components
+    <StorybookComponents.Placeholder>end</StorybookComponents.Placeholder>
+  </PageFooter.End>
+</PageFooter>
+```
+
+Here we see a `<PageFooter/>` component, which main purpose is to give structure to the footer section of `<Page/>` component. `<StorybookComponents.Placeholder/>` should be used to represent available layouting options.
+
+### Property Example
+
+Property examples are meant to illustrate different types of property usage.
+
+#### 1. Examples should not include additional properties unless additional properties are needed to represent the full feature.
+
+```jsx
+// do
+<StorybookComponents.Stack>
+  <TextButton weight="thin">Thin</TextButton>
+  <TextButton weight="normal">Normal</TextButton>
+<StorybookComponents.Stack>
+
+// don't
+<StorybookComponents.Stack>
+  <TextButton weight="thin" size="small">Thin</TextButton>
+  <TextButton weight="normal" size="small">Normal</TextButton>
+<StorybookComponents.Stack>
+```
+
+#### 2. Properties that are image based url's should use assets directly from libraries dedicated assets folder.
+
+> Why? External links tend to get taken down and so our story examples gets broken.
+
+```jsx
+// do
+<CardGalleryItem backgroundImageUrl="table_with_fruits.jpg" />
+
+// don't
+<CardGalleryItem backgroundImageUrl="https://random-link.com/table_with_fruits.jpg" />
+```
+
+#### 3. In case property requires large data sets for interpretation - functional snippets can be used to move big data sets to meaningful variables.
+
+```jsx
+// do
+() => {
+  const options = [
+    { id: 1, value: 'Option 1' },
+    { id: 2, value: 'Option 2' },
+    { id: 3, value: 'Option 3' },
+    { id: 4, value: 'Option 4' },
+    { id: 5, value: 'Option 5' },
+    { id: 6, value: 'Option 6' },
+    { id: 7, value: 'Option 7' },
+    { id: 8, value: 'Option 8' },
+    { id: 9, value: 'Option 9' },
+    { id: 10, value: 'Option 10' },
+  ];
+
+  return <Dropdown options={options} />;
+};
+
+// don't
+<Dropdown
+  options={[
+    { id: 1, value: 'Option 1' },
+    { id: 2, value: 'Option 2' },
+    { id: 3, value: 'Option 3' },
+    { id: 4, value: 'Option 4' },
+    { id: 5, value: 'Option 5' },
+    { id: 6, value: 'Option 6' },
+    { id: 7, value: 'Option 7' },
+    { id: 8, value: 'Option 8' },
+    { id: 9, value: 'Option 9' },
+    { id: 10, value: 'Option 10' },
+  ]}
+/>;
+```
+
+#### 4. Complex structure components examples can be daunting to comprehend. In such cases, there is value in abstracting code into smaller modules in order to reduce mental effort in understanding the code.
+
+```jsx
+//do
+() => {
+  const renderTableToolbar = () => (
+    <TableToolbar>
+      <TableToolbar.Title>Published</TableToolbar.Title>
+    </TableToolbar>
+  );
+
+  const renderEmptyState = () => (
+    <Table.EmptyState>
+      <TextButton prefixIcon={<Icons.Add />}>Create New Post</TextButton>
+    </Table.EmptyState>
+  );
+
+  return (
+    <Table>
+      {renderTableToolbar()}
+      {renderEmptyState()}
+    </Table>
+  );
+};
+
+// don't
+() => (
+  <Table>
+    <TableToolbar>
+      <TableToolbar.Title>Published</TableToolbar.Title>
+    </TableToolbar>
+    <Table.EmptyState>
+      <TextButton prefixIcon={<Icons.Add />}>Create New Post</TextButton>
+    </Table.EmptyState>
+  </Table>
+);
+```
+
+#### 5. Some component properties are controlled externally and hence require local state. React hooks should be used.
+
+```jsx
+() => {
+  const [checked, setChecked] = React.useState(false);
+
+  return (
+    <CheckToggle checked={checked} onChange={() => setChecked(!checked)} />
+  );
+};
+```
+
+#### 6. Properties that are supposed to relate to the behavior of other components should be used meaningfully and provided with near real world examples.
+
+```jsx
+() => {
+  const [isModalOpened, setModalOpened] = React.useState(false);
+
+  return (
+    <StorybookComponents.Stack>
+      <StorybookComponents.Action onClick={() => setModalOpened(true)}>
+        Open Announcement Modal
+      </StorybookComponents.Action>
+      <Modal
+        isOpen={isModalOpened}
+        onRequestClose={() => setModalOpened(false)}
+      >
+        Real World Example
+      </Modal>
+    </StorybookComponents.Stack>
+  );
+};
+```
+
+### Common Use Case
+
+Used to illustrate real-world examples, such as interactivity and components with state and content that is used in actual applications. All components presented in the examples should be library components and content that it used inside must resemble real world use case.
+
+#### 1. Simulating data fetching
+
+Components examples that are meant to work with data fetched from server should use StorybookUtils.fetch function that simulates data coming from server.
+
+```jsx
+() => {
+  const containerRef = React.useRef(null);
+  const [data, setData] = React.useState([]);
+  const [container, setContainer] = React.useState(null);
+
+  const fetchMoreData = async (loaded) => {
+    setData(
+      await StorybookUtils.fetch('/api/table', {
+        load: loaded + 5,
+      }),
+    );
+  };
+
+  React.useEffect(() => {
+    setContainer(containerRef);
+    fetchMoreData();
+  }, []);
+
+  const columns = [
+    { title: 'First', render: (row) => row.firstName },
+    { title: 'Last', render: (row) => row.lastName },
+  ];
+
+  return (
+    <StorybookComponents.Stack ref={containerRef} height="258px">
+      <Table
+        data={data}
+        columns={columns}
+        infiniteScroll
+        hasMore={true}
+        loadMore={fetchMoreData}
+        itemsPerPage={20}
+        scrollElement={container && container.current}
+      >
+        <Table.Content />
+      </Table>
+    </StorybookComponents.Stack>
+  );
+};
+```
 ## API Section
 
 API table should list ALL available properties and methods of a presented component. 
