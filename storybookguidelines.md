@@ -9,13 +9,16 @@ Storybook is a single source of truth, which:
 * is transparent about existing issues
 
 <br>
+
 ## Page Structure
+
 Each component story consists of following sections:
 
 ![](PageStructure.png)
 
 
 <br>
+
 ## Description Section
 
 Description should provide enough information to make a decision if it’s a right component for a user case or an alternative solution should be selected instead. Description should explain:
@@ -41,6 +44,7 @@ Example:
 `import { AddItem } from 'wix-style-react';`
 
 <br>
+
 ## Examples Section
 
 Examples should demonstrate how component behaves and when to use it. In order to maintain consistency between stories, examples should go in this order:
@@ -50,7 +54,9 @@ Examples should demonstrate how component behaves and when to use it. In order t
 1. Common use cases
 
 <br>
+
 ### 1. Core Structure
+
 Single example for container based components to showcase how it is constructed and list available areas. This example should:
 
 * Visually display existing content areas and design possibilities it provide
@@ -59,7 +65,9 @@ Single example for container based components to showcase how it is constructed 
 
 
 <br>
-#####Visuals
+
+##### Visuals
+
 Use schematic drawing to visualise content areas, when containers do not have a default content type and accept any kind of content (node). If there are multiple content areas use text to communicate how each area is called.
 
 <table>
@@ -150,7 +158,9 @@ Use other components from the library to explain mechanism containers behaviour,
 
 
 <br>
-#####Description
+
+##### Description
+
 Structure example description should state:
 
 * what areas component consist of (if there are multiple areas only)
@@ -199,6 +209,7 @@ Structure example description should state:
 
 
 <br>
+
 ### 2. Properties
 
 Property examples step by step introduce users to component features. This section should reveal and explain full component capabilities, also how to handle common edge cases (i.e. text wrapping).
@@ -211,7 +222,9 @@ Each component has a set of properties and features to explain. Examples of them
 * Behaviour
 
 <br>
-#####Visuals
+
+##### Visuals
+
 Be aware that users are visual learners by nature. Examples we provide should be as self explanatory as possible. 
 
 In order to decide what content inside of a snippets would be suitable think about the following:
@@ -571,7 +584,9 @@ Add external labels to communicate changes that happen in code for non visual fe
 </table>
 
 <br>
-#####Description
+
+##### Description
+
 Property example should always be followed by a description explaining how and when to use it. Depending on a property type description could state:
 
 * what purpose property should be used for <strong>(mandatory)</strong>
@@ -803,6 +818,7 @@ Selection of examples how to write example descriptions:
 
 
 <br>
+
 ### 3. Common Use Cases
 
 > <strong>Note:</strong>These examples are complex and should be made by WSR team only. 
@@ -845,7 +861,8 @@ Each property listed in this sections should have:
 * List of possible value options to choose from, i.e. oneOf (‘placement’) should include available placement options such as top, bottom, left, right
 
 <br>
-#####Description
+
+##### Description
 
 > Tip: always start writing description with a verb
 
@@ -936,7 +953,9 @@ Each property listed in this sections should have:
 
 
 <br>
+
 ## Templates
+
 For all the future story docs, please start with this template:
 [https://docs.google.com/document/d/1KmQ56KeyAPqsiQ7vskSMJxK2Lfq9XlO0vzYoM_Nwn3M/edit?usp=sharing]()
 
