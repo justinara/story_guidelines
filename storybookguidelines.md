@@ -1084,7 +1084,6 @@ Components examples that are meant to work with data fetched from server should 
   ];
 
   return (
-    <StorybookComponents.Stack ref={containerRef} height="258px">
       <Table
         data={data}
         columns={columns}
@@ -1096,7 +1095,6 @@ Components examples that are meant to work with data fetched from server should 
       >
         <Table.Content />
       </Table>
-    </StorybookComponents.Stack>
   );
 };
 ```
