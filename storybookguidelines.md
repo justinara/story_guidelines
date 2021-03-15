@@ -203,6 +203,7 @@ Structure example description should state:
 
 Property examples step by step introduce users to component features. This section should reveal and explain full component capabilities, also how to handle common edge cases (i.e. text wrapping).
 
+<br>
 Each component has a set of properties and features to explain. List them in order from least to most complex ones:
 
 <strong>1. Appearance</strong> - list of properties that controls visual look and feel of a component
@@ -229,6 +230,7 @@ Each component has a set of properties and features to explain. List them in ord
 * Other *(i.e. spellChecking, custom HTML tag)*
 
 <br>
+
 > Note: Order in which properties are listed can and should be adjusted depending per component and its most commonly used props
 
 <br>
@@ -394,7 +396,7 @@ Merge directly dependent or same purpose properties into a single example (i.e. 
 > </table>
 
 <br>
-Don't merge property values which serve different purposes. Provide each of them with a dedicated example inside of the same snippet. Use real and meaningful copy to communicate purpose better.
+Don't merge property values which serve different purposes. Provide each of them with a dedicated example inside of the same snippet. Use real and meaningful copy to communicate purpose better: <br>
 
 > In example, selection items inside of a dropdown layout can be grouped using subheader or divider, but intentions are different. Subheader provides a name for a group. While divider separates list item that provide entirely different results, i.e. will add another field to the form where you can specify a custom length of a plan.
 
