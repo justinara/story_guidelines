@@ -591,6 +591,35 @@ Selection of examples how to write example descriptions:
 	<tr>
     <td>
 		<i>
+			<strong>Subtitle</strong><br>
+      		Explain action in more detail with a subtitle. Keep in mind that long subtitles affect visual hierarchy and compete with main CTA.
+		</i>
+    </td>
+    <td>
+		<i>
+			<strong>Subtitle</strong><br>
+			A subtitle text can be set.
+		</i>
+    </td>
+  </tr>
+	<tr>
+		<td>
+			<img src='DO.png'/><br>
+			<strong>DO.</strong>
+			Define the purpose of a feature.
+		</td>
+		<td>
+			<img src='DONT.png'/><br>
+			<strong>DON'T.</strong>
+			Don't write generic descriptions that don't bring value.
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr>
+    <td>
+		<i>
 			<strong>Skin</strong><br>
       		Highlights the purpose of an action. It supports 3 skin types.
       		<ul>
@@ -611,123 +640,73 @@ Selection of examples how to write example descriptions:
 		<td>
 			<img src='DO.png'/><br>
 			<strong>DO.</strong>
-			Explain when to use each type
+			Explain when to use each property option.
 		</td>
 		<td>
 			<img src='DONT.png'/><br>
 			<strong>DON'T.</strong>
-			Don’t write a generic message that list options without explanation what each of them is for. 
+			Don’t list options without explaining when to use each one of them. 
 		</td>
 	</tr>
 </table>
 
 <table>
 	<tr>
-	<td><img src='DO.png'/><br></td>
-    	<td>
-      		<strong>Prefix Icon</strong><br>
-      		Allows to provide additional clarity to an action with a visual clue.
-    	</td>
-  </tr>
-  <tr>
-	<td><img src='DONT.png'/><br></td>
-    	<td>
-      		<strong>Prefix Icon</strong><br>
-      		Supports prefix icons.
-    	</td>
-  </tr>
-</table>
-
-<table>
-	<tr>
-	<td><img src='DO.png'/><br></td>
-    	<td>
-      		<strong>Subtitle</strong><br>
-      		Explain action in more detail with a subtitle. Keep in mind that long subtitles affect visual hierarchy and compete with main CTA.
-    	</td>
-  </tr>
-  <tr>
-	<td><img src='DONT.png'/><br></td>
-    	<td>
-      		<strong>Subtitle</strong><br>
-      		A subtitle text can be set.
-    	</td>
-  </tr>
-</table>
-
-<table>
-	<tr>
-		<td><img src='DO.png'/><br></td>
-    	<td>
-      		<strong>Subtoolbar</strong><br>
+    <td>
+		<i>
+			<strong>Subtoolbar</strong><br>
       		Provides a sticky container for related actions or content (i.e. list of applied filters). Area accepts any kind of content.
-    	</td>
+		</i>
+    </td>
+    <td>
+		<i>
+			<strong>Subtoolbar</strong><br>
+			A Table can contain a sticky sub-toolbar, an area for a tag list of filtered items.
+		</i>
+    </td>
   </tr>
-  <tr>
-	<td><img src='DONT.png'/><br></td>
-    	<td>
-      		<strong>Subtoolbar</strong><br>
-		A Table can contain a sticky sub-toolbar, an area for additional actions such as displaying a tag list of filtered items.
-    	</td>
-  </tr>
+	<tr>
+		<td>
+			<img src='DO.png'/><br>
+			<strong>DO.</strong>
+			Define accepted content types.
+		</td>
+		<td>
+			<img src='DONT.png'/><br>
+			<strong>DON'T.</strong>
+			Don’t be too specific about the use case if feature is flexible.
+		</td>
+	</tr>
 </table>
 
 <table>
 	<tr>
-	<td><img src='DO.png'/><br></td>
-    	<td>
-      		<strong>Header and Footer</strong><br>
-      		Enable fixed header and footer areas to store actions related to the options list, i.e. “Manage options”, “Add new option”.
-    	</td>
-  </tr>
-  <tr>
-	<td><img src='DONT.png'/><br></td>
-    	<td>
-      		<strong>Header and Footer</strong><br>
-		DropdownLayout supports adding content to fixed header and footer. Use it to add actions like “see all options"
-    	</td>
-  </tr>
-</table>
-
-<table>
-	<tr>
-	<td><img src='DO.png'/><br></td>
-    	<td>
-      		<strong>Lazy Load</strong><br>
-      		Defines what to load in initial state:
-      		<ul>
-      			<li>auto - loads full file</li>
-      			<li>metadata - loads only metadata of a file (default)</li>
-      			<li>none - loads nothing in initial state (audio will be loaded once play is pressed)</li>
-      		</ul>
-    	</td>
-  </tr>
-  <tr>
-	<td><img src='DONT.png'/><br></td>
-    	<td>
-      		<strong>Lazy Load</strong><br>
-		The given file is not loaded until play is pressed.
-    	</td>
-  </tr>
-</table>
-
-<table>
-	<tr>
-	<td><img src='DO.png'/><br></td>
-    	<td>
-      		<strong>Letter Counting</strong><br>
+    <td>
+		<i>
+			<strong>Letter Counting</strong><br>
       		Indicates the number of letters typed inside of an input area. Set both maxLength and hasCounter props to show the counter.
-    	</td>
+		</i>
+    </td>
+    <td>
+		<i>
+			<strong>Letter Counting</strong><br>
+			InputArea can indicate how many letters were typed.
+		</i>
+    </td>
   </tr>
-  <tr>
-	<td><img src='DONT.png'/><br></td>
-    	<td>
-      		<strong>Letter Counting</strong><br>
-		InputArea can indicate how many letters were typed, in order to show the counter you should set both maxLength and hasCounter.
-    	</td>
-  </tr>
+	<tr>
+		<td>
+			<img src='DO.png'/><br>
+			<strong>DO.</strong>
+			Highlight the required conditions for feature to work as expected.
+		</td>
+		<td>
+			<img src='DONT.png'/><br>
+			<strong>DON'T.</strong>
+			Don’t leave mandatory conditions unmentioned.
+		</td>
+	</tr>
 </table>
-
 
 <br>
 
