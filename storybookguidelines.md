@@ -611,12 +611,12 @@ Selection of examples how to write example descriptions:
 		<td>
 			<img src='DO.png'/><br>
 			<strong>DO.</strong>
-			Give a meaningful description.
+			Explain when to use each type
 		</td>
 		<td>
 			<img src='DONT.png'/><br>
 			<strong>DON'T.</strong>
-			Don’t write a generic message that gives no value.
+			Don’t write a generic message that list options without explanation what each of them is for. 
 		</td>
 	</tr>
 </table>
