@@ -203,12 +203,33 @@ Structure example description should state:
 
 Property examples step by step introduce users to component features. This section should reveal and explain full component capabilities, also how to handle common edge cases (i.e. text wrapping).
 
-Each component has a set of properties and features to explain. Examples of them should be listed from least to most complex ones. Priority might differ depending on a component, but most commonly it follows this order:
+Each component has a set of properties and features to explain. List them in order from least to most complex ones:
 
-* Appearance
-* States
-* Content
-* Behaviour
+<strong>1. Appearance</strong> - list of properties that controls visual look and feel of a component
+
+* Size and Layout *(i.e. width, height, position, direction)*
+* Style *(i.e. skin, shape, shadow, border)*
+
+<strong>2. States</strong> - list of predefined states of a component and when they should be displayed
+
+* Selection *(i.e. selected, checked)*
+* Validation *(i.e. error, warning, status)*
+
+<strong>3. Content</strong> - list of properties that allow to customise content
+
+* Content areas *(i.e. header, footer, suffix)*
+* Text *(i.e. title, subtitle, additionalInfo)*
+* Visual content *(i.e. thumbnail, avatar, image)*
+* Actions *(i.e. actionText, primaryAction, secondaryAction)*
+
+<strong>4. Behaviour</strong> - list of properties that control component behaviour or enable specific functionality for it
+
+* Data loading *(i.e. lazyLoading, infiniteScroll)*
+* Display *(i.e. horizontalScroll, overflow, collapse)*
+* Other *(i.e. spellChecking, custom HTML tag)*
+
+<br>
+> Note: Order in which properties are listed can and should be adjusted depending per component and its most commonly used props
 
 <br>
 
@@ -337,7 +358,7 @@ Use real content to demonstrate edge cases handling. It showcases the behaviour 
 
 
 <br>
-Merge directly dependent or same purpose properties into a single example (i.e. width and height could be a single example named ‘Dimensions’).
+Merge directly dependent or same purpose properties into a single example (i.e. width and height could be a single example named ‘Dimensions’):
 
 <table>
 <tr>
@@ -358,6 +379,19 @@ Merge directly dependent or same purpose properties into a single example (i.e. 
   </tr>
 </table>
 
+> Note: Examples of properties that could be shown in a single snippet:
+> <table>
+> 	<tr>
+> 		<td>width<br>height</td>
+> 		<td>maxWidth<br>maxHeight<br>ellipsis<br>textWrap<br>overflow</td>
+> 		<td>primary<br>secondary</td>
+> 		<td>border<br>borderRadius<br>borderWidth</td>
+> 		<td>color<br>backgroundColour<br>textColor</td>
+> 		<td>selected<br>disabled<br> selected disabled</td>
+> 		<td>header<br>footer<br>footnote</td>
+> 		<td>primaryAction<br>secondaryAction</td>
+> 	</tr>
+> </table>
 
 <br>
 Don't merge property values which serve different purposes. Provide each of them with a dedicated example inside of the same snippet. Use real and meaningful copy to communicate purpose better.
@@ -381,132 +415,6 @@ Don't merge property values which serve different purposes. Provide each of them
     	Don’t merge prop variations with different intentions in a single layout. It doesn't explain clearly how they differ.
     </td>
   </tr>
-</table>
-
-
-<br>
-List property examples in order of priority. Check the table below for the most common order and examples which properties could be merged together in a single example.
-
-> Note: Order in which properties are listed can and should be adjusted depending per component and its most commonly used props
-
-<strong>1. Appearance</strong><br>
-List of properties that controls visual look and feel of a component
-
-<table>
-	<tr>
-		<th>Group</th>
-		<th colspan=7>What to show in a single snippet?</th>
-	</tr>
-	<tr>
-		<td><strong>Size and Layout</strong><br></td>
-		<td>size</td>
-		<td>width<br>height</td>
-		<td>alignment</td>
-		<td>position</td>
-		<td>direction</td>
-		<td>padding<br>margin</td>
-		<td>maxWidth<br>maxHeight<br>ellipsis<br>textWrap<br>overflow</td>
-	</tr>
-	<tr>
-	    <td><strong>Style</strong><br></td>
-	    <td>skin</td>
-	    <td>primary<br>secondary</td>
-	    <td>shape</td>
-	    <td>color<br>backgroundColour<br>textColor</td>
-	    <td>border<br>borderRadius<br>borderWidth</td>
-	    <td>highlightedRow<br>importantColumn</td>
-	    <td>shadow</td>
-	</tr>
-	  
-
-</table>
-
-<strong>2. States</strong><br>
-List of predefined states of a component and when they should be displayed
-
-<table>
-	<tr>
-		<th>Group</th>
-		<th colspan=7>What to show in a single snippet?</th>
-	</tr>
-	<tr>
-		<td><strong>Status</strong><br></td>
-		<td>selected<br>disabled<br> selected disabled</td>
-		<td>unchecked<br>checked<br>error<br>disabled<br>checked disabled</td>
-		<td>defaultSelected</td>
-		<td>eror<br>warning<br>loading</td>
-		<td>status</td>
-		<td>statusMessage</td>
-		<td>readOnly<br>disabled</td>
-	</tr>
-</table>
-
-<strong>3. Content</strong><br>
-List of properties that allow to customise content
-
-<table>
-	<tr>
-		<th>Group</th>
-		<th colspan=7>What to show in a single snippet?</th>
-	</tr>
-	<tr>
-		<td><strong>Content Areas</strong><br></td>
-		<td>header<br>footer<br>footnote</td>
-		<td>toolbar<br>subtoolbar</td>
-		<td>suffix<br>prefix</td>
-		<td>tooltip</td>
-	</tr>
-	<tr>
-		<td><strong>Text</strong><br></td>
-		<td>overline<br>title<br>subtitle<br>description</td>
-		<td>additionalInfo</td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><strong>Visual content</strong><br></td>
-		<td>illustration<br>thumbnail<br>image</td>
-		<td>avatar</td>
-		<td>badge</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><strong>Actions</strong><br></td>
-		<td>action<br>actionText</td>
-		<td>primaryAction<br>secondaryAction</td>
-		<td></td>
-		<td></td>
-	</tr>
-</table>
-
-<strong>4. Behaviour</strong><br>
-List of properties that control component behaviour or enable specific functionality for it
-<table>
-	<tr>
-		<th>Group</th>
-		<th colspan=7>What to show in a single snippet?</th>
-	</tr>
-	<tr>
-		<td><strong>Data loading</strong><br></td>
-		<td>lazyLoading</td>
-		<td>infiniteScroll<br>pagination</td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><strong>Display</strong><br></td>
-		<td>lazyLoading</td>
-		<td>horizontalScroll</td>
-		<td>overflow</td>
-		<td>resizable</td>
-	</tr>
-	<tr>
-		<td><strong>Other</strong><br></td>
-		<td>spellChecking</td>
-		<td>reordable</td>
-		<td>custom HTML tag</td>
-		<td></td>
-	</tr>
 </table>
 
 <br>
