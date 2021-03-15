@@ -592,7 +592,7 @@ Selection of examples how to write example descriptions:
     <td>
 		<i>
 			<strong>Subtitle</strong><br>
-      		Explain action in more detail with a subtitle. Keep in mind that long subtitles affect visual hierarchy and compete with main CTA.
+      		Explain action in more detail with a subtitle. Keep in <br> mind that long subtitles affect visual hierarchy and compete <br> with main CTA.
 		</i>
     </td>
     <td>
@@ -655,7 +655,7 @@ Selection of examples how to write example descriptions:
     <td>
 		<i>
 			<strong>Subtoolbar</strong><br>
-      		Provides a sticky container for related actions or content (i.e. list of applied filters). Area accepts any kind of content.
+      		Provides a sticky container for related actions <br> or content (i.e. list of applied filters). Area accepts any kind of content.
 		</i>
     </td>
     <td>
@@ -684,7 +684,7 @@ Selection of examples how to write example descriptions:
     <td>
 		<i>
 			<strong>Letter Counting</strong><br>
-      		Indicates the number of letters typed inside of an input area. Set both maxLength and hasCounter props to show the counter.
+      		Indicates the number of letters typed inside of an input area. <br> Set both maxLength and hasCounter props to show the counter.
 		</i>
     </td>
     <td>
