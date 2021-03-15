@@ -1,12 +1,10 @@
 # Storybook Content Guidelines
 
-Storybook documentation provides information about components for UX designers and FED developers.
-
-Storybook is a single source of truth, which:
-
-* provides a full overview of the component and its usage (no alternative information sources should be needed to make a decision)
-* is transparent about development status
-* is transparent about existing issues
+This document explains how to write Storybook documentation in order to have consistent examples across the components. 
+Storybook documentation provides information about components for UX designers and FED developers:
+* It provides a full overview of the component and its usage (no alternative information sources should be needed to make a decision)
+* It shows if a component is developed, in development or deprecated.
+* It explains what's still in development or why it's deprecated and what to use instead.
 
 <br>
 
@@ -21,11 +19,11 @@ Each component story consists of following sections:
 
 ## Description Section
 
-Description should provide enough information to make a decision if it’s a right component for a user case or an alternative solution should be selected instead. Description should explain:
+Description should provide enough information to make a decision if it’s a right component for a user case or an alternative solution should be selected instead. It should explain:
 
 * The primary purpose of the component
 * If it’s a building part for a larger component (i.e. ListItemSelect)
-* When component should be used, also when to avoid using it (optional link to correct solutions per case)
+* Do and don't examples — when component should be used or should not (optional link to correct solutions per case)
 
 
 Example:
@@ -59,12 +57,11 @@ Examples should demonstrate how component behaves and when to use it. In order t
 
 ### 1. Core Structure
 
-Single example for container based components to showcase how it is constructed and list available areas. This example should:
+Container box components should give an example how it is constructed. The example should list all available areas. This example should:
 
-* Visually display existing content areas and design possibilities it provide
-* Explain each content area purpose and accepted content types in description
+* Visually display existing content areas and design possibilities it provides
+* Explain each content area purpose and accepted content types in the description (e.g. node, string, image)
 * Use default properties or placeholder content without additional styling
-
 
 <br>
 
@@ -165,49 +162,40 @@ Use other components from the library to explain mechanism containers behaviour,
 
 Structure example description should state:
 
-* what areas component consist of (if there are multiple areas only)
-* which areas are mandatory and which are optional
-* what type and amount of children elements areas accept 
-* how to control component behaviour (for mechanism containers only)
+* What areas the component consist of (if there are multiple areas only)
+* Which areas are mandatory and which are optional
+* What type and amount of children elements areas accept 
+* How to control component behaviour (for mechanism containers only)
+
 
 <table>
-	<tr>
-	<td><img src='DO.png'/><br></td>
-    	<td>
-      		<strong>Structure</strong><br>
-      		Component consists of a title area and actions container (optional). Actions bar can contain any number of CTA items
-    	</td>
+<tr>
+    <td>
+	<i><strong>Structure</strong><br>
+      	Render modal content by using children prop. Control modal appearance with props:
+      	<ul>
+   		<li>isOpen - this bool prop shows and hides the modal.</li>
+		<li>onRequestClose - this prop calls a function you request. It can be used to control isOpen prop.</li>
+      	</ul></i>
+    </td>
+    <td>
+	<i><strong>Structure</strong><br>
+      	A simple example for modal with an alert</i>
+    </td>
   </tr>
   <tr>
-	<td><img src='DONT.png'/><br></td>
-    	<td>
-      		<strong>Structure</strong><br>
-      		Basic structure of a component
-    	</td>
+    <td>
+    	<img src='DO.png'/><br>
+    	<strong>DO.</strong>
+    	Give a meaningful description.
+    </td>
+    <td>
+    	<img src='DONT.png'/><br>
+    	<strong>DON'T.</strong>
+    	Don’t write a generic message that gives no value.
+    </td>
   </tr>
 </table>
-
-<table>
-	<tr>
-	<td><img src='DO.png'/><br></td>
-    	<td>
-      		<strong>Structure</strong><br>
-      		Render modal content by using children prop. Control modal appearance with props:
-      		<ul>
-      			<li>isOpen - this bool prop shows and hides the modal.</li>
-			<li>onRequestClose - this prop calls a function you request. It can be used to control isOpen prop.</li>
-      		</ul>
-    	</td>
-  </tr>
-  <tr>
-	<td><img src='DONT.png'/><br></td>
-    	<td>
-      		<strong>Structure</strong><br>
-      		A simple example for modal with an alert
-    	</td>
-  </tr>
-</table>
-
 
 <br>
 
