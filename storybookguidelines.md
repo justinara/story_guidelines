@@ -589,113 +589,36 @@ Selection of examples how to write example descriptions:
 
 <table>
 	<tr>
-	<td><img src='DO.png'/><br></td>
-    	<td>
-      		<strong>Skin</strong><br>
+    <td>
+		<i>
+			<strong>Skin</strong><br>
       		Highlights the purpose of an action. It supports 3 skin types.
       		<ul>
       			<li>standard (default)- use in common layouts</li>
       			<li>dark - use in longer list of actions (>5) in order to not overwhelm the user</li>
       			<li>destructive - use for destructive actions only</li>
       		</ul>
-    	</td>
-  </tr>
-  <tr>
-		<td><img src='DONT.png'/><br></td>
-    	<td>
-      		<strong> Skin </strong><br>
+		</i>
+    </td>
+    <td>
+		<i>
+			<strong> Skin </strong><br>
       		Supports three different skins: standard, dark & destructive.
-    	</td>
+		</i>
+    </td>
   </tr>
-</table>
-
-<table>
 	<tr>
-	<td><img src='DO.png'/><br></td>
-    	<td>
-      		<strong>Shape</strong><br>
-      		Defines intent of an input. It supports 2 shape types:
-      		<ul>
-      			<li>round (default)- use in modals and popover menus when it acts as a search</li>
-      			<li>square - use when input is a part of general form</li>
-      		</ul>
-    	</td>
-  </tr>
-  <tr>
-	<td><img src='DONT.png'/><br></td>
-    	<td>
-      		<strong>Shape</strong><br>
-      		AddressInput can be either round or square depending on the roundInput prop (default: true).
-    	</td>
-  </tr>
-</table>
-
-<table>
-	<tr>
-	<td><img src='DO.png'/><br></td>
-    	<td>
-      		<strong>Size</strong><br>
-      		Adjust the component size using size prop. It supports 3 sizes:
-      		<ul>
-      			<li>large - use it in onboarding flows, where input needs emphasis </li>
-      			<li>medium (default) - use in all common cases</li>
-      			<li>small - use in more dense and narrow layouts</li>
-      		</ul>
-    	</td>
-  </tr>
-  <tr>
-	<td><img src='DONT.png'/><br></td>
-    	<td>
-      		<strong>Size</strong><br>
-      		Supports three sizes: large, medium and small.
-    	</td>
-  </tr>
-</table>
-
-<table>
-	<tr>
-	<td><img src='DO.png'/><br></td>
-    	<td>
-      		<strong>States</strong><br>
-      		Defines checkbox selection state. Component supports 5 states:
-      		<ul>
-      			<li>unchecked (default)</li>
-      			<li>checked - use to mark selected option</li>
-      			<li>error - use in validation to highlight mandatory item</li>
-      			<li>disabled - use to indicate that option cannot be selected</li>
-      			<li>disabled checked - use to indicate that option cannot be removed from selection</li>
-      		</ul>
-    	</td>
-  </tr>
-  <tr>
-	<td><img src='DONT.png'/><br></td>
-    	<td>
-      		<strong>States</strong><br>
-      		Checkbox can be either checked, unchecked, has error or disabled.
-    	</td>
-  </tr>
-</table>
-
-<table>
-	<tr>
-	<td><img src='DO.png'/><br></td>
-    	<td>
-      		<strong>Status</strong><br>
-      		Control component status using status prop. It supports 3 states:
-      		<ul>
-      			<li>error - use to highlight invalid input value</li>
-      			<li>warning - use to highlight inputs that values impact user business or can’t be validated.</li>
-      			<li>loading - use to show that the value is being uploaded to the server</li>
-      		</ul>
-    	</td>
-  </tr>
-  <tr>
-	<td><img src='DONT.png'/><br></td>
-    	<td>
-      		<strong>Status</strong><br>
-      		Supports error, warning and loading status.
-    	</td>
-  </tr>
+		<td>
+			<img src='DO.png'/><br>
+			<strong>DO.</strong>
+			Give a meaningful description.
+		</td>
+		<td>
+			<img src='DONT.png'/><br>
+			<strong>DON'T.</strong>
+			Don’t write a generic message that gives no value.
+		</td>
+	</tr>
 </table>
 
 <table>
