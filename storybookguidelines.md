@@ -1,10 +1,11 @@
 # Storybook Content Guidelines
 
-This document explains how to write Storybook documentation in order to have consistent examples across the components. 
+This document explains how to write Storybook documentation in order to have consistent examples across the components.
 Storybook documentation provides information about components for UX designers and FED developers:
-* It provides a full overview of the component and its usage (no alternative information sources should be needed to make a decision)
-* It shows if a component is developed, in development or deprecated.
-* It explains what's still in development or why it's deprecated and what to use instead.
+
+- It provides a full overview of the component and its usage (no alternative information sources should be needed to make a decision)
+- It shows if a component is developed, in development or deprecated.
+- It explains what's still in development or why it's deprecated and what to use instead.
 
 <br>
 
@@ -14,24 +15,23 @@ Each component story consists of following sections:
 
 ![](PageStructure.png)
 
-
 <br>
 
 ## Description Section
 
 Description should provide enough information to make a decision if it’s a right component for a user case or an alternative solution should be selected instead. It should explain:
 
-* The primary purpose of the component
-* If it’s a building part for a larger component (i.e. ListItemSelect)
-* Do and don't examples — when component should be used or should not (optional link to correct solutions per case)
-
+- The primary purpose of the component
+- If it’s a building part for a larger component (i.e. ListItemSelect)
+- Do and don't examples — when component should be used or should not (optional link to correct solutions per case)
 
 Example:
+
 > Modal controls the overlay layout that appears on call functions. It’s a container for components > like CustomModalLayout, ModalPreviewLayout and others.
 > Use it:
-> 
-> * To reveal all types of modal layouts
-> * To display a full page loading state
+>
+> - To reveal all types of modal layouts
+> - To display a full page loading state
 
 <br>
 
@@ -59,9 +59,9 @@ Examples should demonstrate how component behaves and when to use it. In order t
 
 Container box components should give an example how it is constructed. The example should list all available areas. This example should:
 
-* Visually display existing content areas and design possibilities it provides
-* Explain each content area purpose and accepted content types in the description (e.g. node, string, image)
-* Use default properties or placeholder content without additional styling
+- Visually display existing content areas and design possibilities it provides
+- Explain each content area purpose and accepted content types in the description (e.g. node, string, image)
+- Use default properties or placeholder content without additional styling
 
 <br>
 
@@ -114,6 +114,7 @@ Showcase the effect of different values passed to the same prop if it helps to c
 If a component has a predefined value types, stick to these to showcase primary and recommended usage of a component. If content type is text, use it to explain area name and purpose.
 
 If i.e. ‘title’ also accepts node content, it should be mentioned in a description and API.
+
 <table>
 <tr>
     <td><img src='MarketingContentDO.png'/></td>
@@ -155,18 +156,16 @@ Use other components from the library to explain mechanism containers behaviour,
   </tr>
 </table>
 
-
 <br>
 
 #### Description
 
 Structure example description should state:
 
-* What areas the component consist of (if there are multiple areas only)
-* Which areas are mandatory and which are optional
-* What type and amount of children elements areas accept 
-* How to control component behaviour (for mechanism containers only)
-
+- What areas the component consist of (if there are multiple areas only)
+- Which areas are mandatory and which are optional
+- What type and amount of children elements areas accept
+- How to control component behaviour (for mechanism containers only)
 
 <table>
 <tr>
@@ -208,26 +207,26 @@ Each component has a set of properties and features to explain. List them in ord
 
 <strong>1. Appearance</strong> - list of properties that controls visual look and feel of a component
 
-* Size and Layout *(i.e. width, height, position, direction)*
-* Style *(i.e. skin, shape, shadow, border)*
+- Size and Layout _(i.e. width, height, position, direction)_
+- Style _(i.e. skin, shape, shadow, border)_
 
 <strong>2. States</strong> - list of predefined states of a component and when they should be displayed
 
-* Selection *(i.e. selected, checked)*
-* Validation *(i.e. error, warning, status)*
+- Selection _(i.e. selected, checked)_
+- Validation _(i.e. error, warning, status)_
 
 <strong>3. Content</strong> - list of properties that allow to customise content
 
-* Content areas *(i.e. header, footer, suffix)*
-* Text *(i.e. title, subtitle, additionalInfo)*
-* Visual content *(i.e. thumbnail, avatar, image)*
-* Actions *(i.e. actionText, primaryAction, secondaryAction)*
+- Content areas _(i.e. header, footer, suffix)_
+- Text _(i.e. title, subtitle, additionalInfo)_
+- Visual content _(i.e. thumbnail, avatar, image)_
+- Actions _(i.e. actionText, primaryAction, secondaryAction)_
 
 <strong>4. Behaviour</strong> - list of properties that control component behaviour or enable specific functionality for it
 
-* Data loading *(i.e. lazyLoading, infiniteScroll)*
-* Display *(i.e. horizontalScroll, overflow, collapse)*
-* Other *(i.e. spellChecking, custom HTML tag)*
+- Data loading _(i.e. lazyLoading, infiniteScroll)_
+- Display _(i.e. horizontalScroll, overflow, collapse)_
+- Other _(i.e. spellChecking, custom HTML tag)_
 
 <br>
 
@@ -237,14 +236,14 @@ Each component has a set of properties and features to explain. List them in ord
 
 #### Visuals
 
-Be aware that users are visual learners by nature. Examples we provide should be as self explanatory as possible. 
+Be aware that users are visual learners by nature. Examples we provide should be as self explanatory as possible.
 
 In order to decide what content inside of a snippets would be suitable think about the following:
 
-* What am I trying to communicate to the user (list of options to choose from, what behaviour property enables, etc.)?
-* What is a property type (is it visual by its own, or does it need guidance)?
-* How could we efficiently use initial component features to provide meaningful context?
-* Could we help to set correct content patterns via snippets?
+- What am I trying to communicate to the user (list of options to choose from, what behaviour property enables, etc.)?
+- What is a property type (is it visual by its own, or does it need guidance)?
+- How could we efficiently use initial component features to provide meaningful context?
+- Could we help to set correct content patterns via snippets?
 
 <br>
 In cases where example lists down available value options use predefined component elements (if there are any) to communicate how passed value affects component appearance or behaviour.
@@ -267,7 +266,6 @@ In cases where example lists down available value options use predefined compone
     </td>
   </tr>
 </table>
-
 
 <br>
 Merge statuses into a single snippet for interactive components. Use labels to communicate how each status is called.
@@ -335,7 +333,6 @@ In cases where property value affects the content which is allowed to be display
   </tr>
 </table>
 
-
 <br>
 Use real content to demonstrate edge cases handling. It showcases the behaviour and sets correct content patterns at the same time. Avoid gibberish text that doesn't bring benefit.
 
@@ -357,7 +354,6 @@ Use real content to demonstrate edge cases handling. It showcases the behaviour 
     </td>
   </tr>
 </table>
-
 
 <br>
 Merge directly dependent or same purpose properties into a single example (i.e. width and height could be a single example named ‘Dimensions’):
@@ -382,6 +378,7 @@ Merge directly dependent or same purpose properties into a single example (i.e. 
 </table>
 
 > Note: Examples of properties that could be shown in a single snippet:
+>
 > <table>
 > 	<tr>
 > 		<td>width<br>height</td>
@@ -488,10 +485,10 @@ Add external labels to communicate changes that happen in code for non visual fe
 
 Property example should always be followed by a description explaining how and when to use it. Depending on a property type description could state:
 
-* what purpose property should be used for <strong>(mandatory)</strong>
-* what property values are available and what each option is used for
-* what is a default value
-* what are accepted child element types
+- what purpose property should be used for <strong>(mandatory)</strong>
+- what property values are available and what each option is used for
+- what is a default value
+- what are accepted child element types
 
 > Tip: always start writing description with a verb
 
@@ -622,13 +619,13 @@ Selection of examples how to write example descriptions:
 
 ### 3. Common Use Cases
 
-> <strong>Note:</strong>These examples are complex and should be made by WSR team only. 
+> <strong>Note:</strong>These examples are complex and should be made by WSR team only.
 
 Common use cases is a list of examples which showcase recommended layouts and often used complex scenarios:
 
-* Use real layouts and content to communicate cases where different variations of component should be used
-* Use meaningful copy and set correct / recommended content patterns
-* Showcase complex structures that can be achieved with a component
+- Use real layouts and content to communicate cases where different variations of component should be used
+- Use meaningful copy and set correct / recommended content patterns
+- Showcase complex structures that can be achieved with a component
 
 <table>
 <tr>
@@ -648,7 +645,6 @@ Common use cases is a list of examples which showcase recommended layouts and of
     </td>
   </tr>
 </table>
-
 
 <br>
 
@@ -684,7 +680,36 @@ Snippets represent component expressions in code and should be easy to follow so
 - The content for the snippets should be prepared together with UX writers and UX designers.
 - Do not use native HTML tags except when necessary.
 - Code duplication is preferable for readability.
+- For property and structure examples layouting use StorybookComponents, but for commone use caases don't.
 - Do not waste time on caching optimizations, as these examples are not effective code, but rather representation of usage. (useMemo, useCallback)
+
+### StorybookComponents
+
+StorybookComponents are dedicated components developed by Design Systems team
+to meet the needs of example demonstration.
+#### <StorybookComponents.Stack>
+
+CSS Flex based component meant for stacking multiple components either horizontally or vertically.
+
+| Property       | Tye    | Default    |
+| -------------- | ------ | ---------- |
+| justifyContent | string | flex-start |
+| alignItems     | string | flex-start |
+| gap            | string | 30px       |
+| width          | string | ---------  |
+| height         | string | ---------  |
+| padding        | string | ---------  |
+| margin         | string | ---------  |
+
+#### <StorybookComponents.Placeholder>
+
+CSS Block based component meant for structure examples.
+
+| Property | Tye             | Default   |
+| -------- | --------------- | --------- |
+| skin     | 'dark', 'light' | 'dark     |
+| width    | string          | --------- |
+| height   | string          | --------- |
 
 ### Structure Example
 
@@ -884,29 +909,30 @@ Components examples that are meant to work with data fetched from server should 
   ];
 
   return (
-      <Table
-        data={data}
-        columns={columns}
-        infiniteScroll
-        hasMore={true}
-        loadMore={fetchMoreData}
-        itemsPerPage={20}
-        scrollElement={container && container.current}
-      >
-        <Table.Content />
-      </Table>
+    <Table
+      data={data}
+      columns={columns}
+      infiniteScroll
+      hasMore={true}
+      loadMore={fetchMoreData}
+      itemsPerPage={20}
+      scrollElement={container && container.current}
+    >
+      <Table.Content />
+    </Table>
   );
 };
 ```
+
 ## API Section
 
-API table should list ALL available properties and methods of a presented component. 
+API table should list ALL available properties and methods of a presented component.
 Each property listed in this sections should have:
 
-* Description
-* Type
-* Default value written (If component has default value. Bool type props should always have it).
-* List of possible value options to choose from, i.e. oneOf (‘placement’) should include available placement options such as top, bottom, left, right
+- Description
+- Type
+- Default value written (If component has default value. Bool type props should always have it).
+- List of possible value options to choose from, i.e. oneOf (‘placement’) should include available placement options such as top, bottom, left, right
 
 <br>
 
@@ -999,13 +1025,9 @@ Each property listed in this sections should have:
   </tr>
 </table>
 
-
 <br>
 
 ## Templates
 
 For all the future story docs, please start with this template:
 [https://docs.google.com/document/d/1KmQ56KeyAPqsiQ7vskSMJxK2Lfq9XlO0vzYoM_Nwn3M/edit?usp=sharing]()
-
-
-
